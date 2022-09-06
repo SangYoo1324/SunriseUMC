@@ -1,0 +1,86 @@
+main{
+    width: 100%;
+    height: 100vh;  
+    /* 화면기준: 1000px 면 100vh는 1000px */
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/SunriseChurch2019.jpg') center center;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+main h4{
+font-size: 2rem;
+}
+
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+main h2 span::after{
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: white;
+    display:inline-block;
+    animation: blink 0.7s ease-in-out infinite;
+}
+
+main p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+   
+}
+
+main button.download{
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+main button.mouse{
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    animation: upDown 1s ease-in-out infinite;
+}
+
+@keyframes upDown{
+    0%{
+        bottom:1rem;
+    }
+    50%{
+        bottom: 2rem;
+    }
+    100%{
+        bottom: 1rem;
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

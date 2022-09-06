@@ -1,0 +1,35 @@
+section .upper{
+  overflow:auto;
+  clear: both;
+}
+
+section .upper .inner{
+    width: 40%;
+    
+    margin-right: 5%;
+    background-color: white;
+    float: left;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+}
+
+section .upper .inner img{
+width: 100%;
+display: block;
+border-radius: 30px;
+}
+
+section .upper .inner strong{
+    color: #fa6a6a;
+    font-size: 2rem;
+    margin:0.5rem 0;
+    display: block;
+}
+
+section .upper .inner h3{
+    font-size: 1.5rem;
+    text-align: center;
+
+}

@@ -1,0 +1,6 @@
+.bg{
+    background:url('../images/church_background.jpeg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+}
